@@ -1,14 +1,21 @@
+.bg {
+  background: url("../img/clinic-doctors-glass-127873.jpg");
+  background-size: cover;
+  padding-bottom: 2em;
+}
 .data {
-  height: 150px;
-  margin-top: 2em;
+  height: auto;
+  margin-top: 1.5em;
   text-align: center;
-  width: 100%;
 }
 .data i {
-  color: #007bff;
+  padding: 5px;
+  background: linear-gradient(180deg, #007dbe 0%, #003f60 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .c-blue {
-  color: #007bff;
+  color: #007dbe;
 }
 h1,
 h2,
@@ -25,7 +32,7 @@ h6 {
   padding-right: 20px;
 }
 header {
-  min-height: 400px;
+  min-height: 320px;
 }
 header figure {
   text-align: center;
@@ -42,4 +49,93 @@ header h1 {
 header h6 {
   font-size: 0.8em;
   text-align: center;
+}
+main {
+  overflow: hidden;
+}
+main h2 {
+  font-size: 1em;
+}
+main .services {
+  min-height: 500px;
+  position: relative;
+}
+main .services .box {
+  background: rgba(255,255,255,0.6);
+  min-height: 280px;
+  width: 90%;
+  border-radius: 20px;
+  bottom: 0;
+  margin-bottom: 20px;
+  position: absolute;
+}
+main .services .box button {
+  text-align: left;
+  width: auto;
+  padding: 0.3em;
+  position: relative;
+  left: 15px;
+  margin-bottom: 15px;
+  background: #007dbe;
+  border: 0;
+  color: #fff;
+  border-radius: 10px;
+}
+main .services .box button i {
+  color: #fff;
+}
+main .services .box button:hover {
+  transition: background 2s;
+  transition: width 2s;
+  -webkit-transition: background 2s;
+  -webkit-transition: width 2s;
+  -moz-transition: background 2s;
+  -moz-trasition: width 2s;
+  background: #003f60;
+  width: 80%;
+}
+main .services .box hr {
+  border: 1px solid #007dbe;
+}
+main .services .box h2 {
+  padding-top: 2em;
+}
+main .services .box i {
+  color: #000;
+  padding-right: 10px;
+}
+main .services .box p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+main .services .service-1,
+main .services .service-2,
+main .services .service-3,
+main .services .service-4,
+main .services .service-5,
+main .services .service-6 {
+  border-radius: 20px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  min-height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .service-1 {
+  background: url("../img/clinic-doctors-glass-127873b.jpg");
+}
+main .service-2 {
+  background: url("../img/achievement-adult-care-1323864.jpg");
+}
+main .service-3 {
+  background: url("../img/pexels-photo-721166.jpeg");
+}
+main .service-4 {
+  background: url("../img/microscope-slide-research-close-up-60022.jpeg");
+}
+main .service-5 {
+  background: url("../img/pexels-photo-1516648.jpeg");
+}
+main .service-6 {
+  background: url("../img/pexels-photo-1321728.jpeg");
 }
