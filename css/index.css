@@ -1,141 +1,139 @@
-.bg {
-  background: url("../img/clinic-doctors-glass-127873.jpg");
-  background-size: cover;
-  padding-bottom: 2em;
+aside {
+  margin-top: 2em;
 }
 .data {
-  height: auto;
-  margin-top: 1.5em;
+  color: #fff;
+  background: #007dbe;
+  padding: 1em;
+  text-align: right;
+}
+.data a {
+  color: #fff;
+  padding: 0 0.5em;
   text-align: center;
 }
-.data i {
-  padding: 5px;
-  background: linear-gradient(180deg, #007dbe 0%, #003f60 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.data a:hover,
+.data i:hover {
+  color: #003f60;
+  text-decoration: none;
 }
-.c-blue {
-  color: #007dbe;
+.data .fa-bars {
+  padding-left: 1.5em;
 }
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: 'Cinzel', serif;
-  padding-left: 20px;
-  padding-right: 20px;
+.data .fa-bars:hover {
+  font-size: 1.5em;
 }
-h6 {
-  font-family: 'Gloria Hallelujah', cursive;
-  padding-left: 20px;
-  padding-right: 20px;
+.center-i-menu {
+  text-align: center;
 }
 header {
-  min-height: 320px;
+  background: url("../img/clinic-doctors-glass-127873.jpg");
+  background-size: cover;
+  height: 100%;
+  min-height: 300px;
+  padding-bottom: 2rem;
+  border-bottom: 5px solid #e2e2e2;
 }
 header figure {
   text-align: center;
+  padding-top: 80px;
 }
 header figure img {
-  height: 100px;
-  margin-top: 20px;
+  max-height: 80px;
 }
 header h1 {
-  font-size: 24px;
+  font-family: 'Cinzel';
+  font-size: 2em;
   margin-top: 20px;
+  padding: 0 20px;
   text-align: center;
 }
-header h6 {
+header h5 {
+  font-family: 'Gloria Hallelujah', cursive;
   font-size: 0.8em;
   text-align: center;
 }
-main {
-  overflow: hidden;
+.center-i-menu {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-main h2 {
-  font-size: 1em;
+.center-i-menu h2,
+.center-i-menu h3 {
+  text-align: center;
+  color: #007dbe;
 }
-main .services {
-  min-height: 500px;
-  position: relative;
+.center-i-menu h3 {
+  font-size: 2em;
+  margin: 50px 0 20px 0;
 }
-main .services .box {
-  background: rgba(255,255,255,0.6);
-  min-height: 280px;
-  width: 90%;
-  border-radius: 20px;
-  bottom: 0;
-  margin-bottom: 20px;
-  position: absolute;
-}
-main .services .box button {
-  text-align: left;
-  width: auto;
-  padding: 0.3em;
-  position: relative;
-  left: 15px;
-  margin-bottom: 15px;
-  background: #007dbe;
-  border: 0;
-  color: #fff;
-  border-radius: 10px;
-}
-main .services .box button i {
-  color: #fff;
-}
-main .services .box button:hover {
-  transition: background 2s;
-  transition: width 2s;
-  -webkit-transition: background 2s;
-  -webkit-transition: width 2s;
-  -moz-transition: background 2s;
-  -moz-trasition: width 2s;
-  background: #003f60;
-  width: 80%;
-}
-main .services .box hr {
+.center-i-menu hr {
   border: 1px solid #007dbe;
+  margin-top: 20px;
+  width: 50%;
 }
-main .services .box h2 {
-  padding-top: 2em;
+.center-i-menu p {
+  margin-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-main .services .box i {
-  color: #000;
-  padding-right: 10px;
+.center-i-menu .container h2 {
+  font-size: 1.2em;
 }
-main .services .box p {
-  padding-left: 15px;
-  padding-right: 15px;
+.center-i-menu .container i {
+  font-size: 2.5em;
+  padding-top: 1em;
+  margin-bottom: 0.5em;
 }
-main .services .service-1,
-main .services .service-2,
-main .services .service-3,
-main .services .service-4,
-main .services .service-5,
-main .services .service-6 {
+.center-i-menu .container h2:hover {
+  color: #fff;
+  background: #003f60;
+  padding-bottom: 1.5em;
   border-radius: 20px;
-  border: 5px solid #fff;
-  overflow: hidden;
-  min-height: 350px;
-  background-size: cover;
+}
+.info-sg {
+  background-image: url("../img/pexels-photo-721166.png");
+  background-position: right;
   background-repeat: no-repeat;
+  background-size: cover;
+  min-height: auto;
+  position: relative;
 }
-main .service-1 {
-  background: url("../img/clinic-doctors-glass-127873b.jpg");
+.info-sg a {
+  color: #fff;
 }
-main .service-2 {
-  background: url("../img/achievement-adult-care-1323864.jpg");
+.info-sg a:hover {
+  color: #007dbe;
 }
-main .service-3 {
-  background: url("../img/pexels-photo-721166.jpeg");
+.info-sg h4 {
+  text-align: right;
+  padding: 10px 5% 5px 15px;
 }
-main .service-4 {
-  background: url("../img/microscope-slide-research-close-up-60022.jpeg");
+.info-sg .time {
+  padding: 2em;
 }
-main .service-5 {
-  background: url("../img/pexels-photo-1516648.jpeg");
+.info-sg .fb-share-button,
+.info-sg .fb-root > a {
+  position: absolute;
+  right: 5%;
+  bottom: 7%;
 }
-main .service-6 {
-  background: url("../img/pexels-photo-1321728.jpeg");
+.info-sg #space-fb {
+  margin-bottom: 2em;
+}
+.light-blue {
+  color: #007dbe;
+}
+.consulta-prioritaria,
+.consulta-programada,
+.imagen-diagnostica,
+.laboratorio-clinico,
+.electrocardiografia,
+.terapia-respiratoria {
+  display: none;
+  color: rgba(0,0,0,0.75);
+}
+@media screen and (max-width: 576px) {
+  .info-sg h4 {
+    font-size: 1em;
+  }
 }

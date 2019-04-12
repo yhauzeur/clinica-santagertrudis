@@ -1,0 +1,73 @@
+light-blue = #007dbe
+dark-blue = #003f60
+
+.data
+	color white
+	background light-blue
+	padding 1em
+	text-align right
+	& a
+		color white
+		padding 0 0.5em
+		text-align center
+	& a:hover
+	& i:hover
+		color dark-blue
+		text-decoration none
+	& .fa-bars
+		padding-left 1.5em
+	& .fa-bars:hover
+		font-size 1.5em
+
+.center-i-menu
+	text-align center
+
+header
+	background url("../img/clinic-doctors-glass-127873.jpg")
+	background-size cover
+	height 100%
+	min-height 300px
+	padding-bottom 2rem
+	border-bottom 5px solid #e2e2e2
+	& figure
+		text-align center
+		padding-top 60px
+		& img
+			max-height 100px
+	h1
+		font-size 3em
+		margin-top 20px
+		padding 0 20px
+		text-align center
+	h5
+		font-family: 'Gloria Hallelujah', cursive;
+		font-size 1em
+		padding 20px 20px
+		text-align center
+
+.center-i-menu
+	// h2, h3
+	// 	text-align center
+		color dark-blue
+	& h3
+		margin 50px 0 20px 0 	
+		font-size 2.5em
+		// color red
+	hr
+		margin-bottom 50px
+		border 1px solid rgba(0, 0, 0, .55)
+		width 50%
+	p
+		padding-left 10%
+		padding-right 10%
+	.container
+		& h2
+			font-size 1.5em
+			// color green
+		i
+			font-size 2em
+		
+.light-blue
+	color light-blue
+
+// @import "media"

@@ -1,117 +1,118 @@
-c-blue = #007dbe
-d-blue = #003f60
+light-blue = #007dbe
+dark-blue = #003f60
 
-.bg
-	background url("../img/clinic-doctors-glass-127873.jpg")
-	background-size cover
-	padding-bottom 2em
-	// overflow hidden
-
+aside
+	margin-top 2em
+	
 .data
-	height auto
-	margin-top 1.5em
+	color white
+	background light-blue
+	padding 1em
+	text-align right
+	// z-index 1
+	// width 100%
+	& a
+		color white
+		padding 0 0.5em
+		text-align center
+	& a:hover
+	& i:hover
+		color dark-blue
+		text-decoration none
+	& .fa-bars
+		padding-left 1.5em
+	& .fa-bars:hover
+		font-size 1.5em
+
+.center-i-menu
 	text-align center
-	& i
-		padding 5px
-		background linear-gradient(180deg, c-blue 0%, d-blue 100%)
-		-webkit-background-clip text
-		-webkit-text-fill-color transparent
-
-.c-blue
-	color c-blue
-
-h1, h2, h3, h4, h5
-	font-family: 'Cinzel', serif;
-	padding-left 20px
-	padding-right 20px
-
-h6
-	font-family: 'Gloria Hallelujah', cursive;
-	padding-left 20px
-	padding-right 20px
 
 header
-	min-height 320px
+	background url("../img/clinic-doctors-glass-127873.jpg")
+	background-size cover
+	height 100%
+	min-height 300px
+	padding-bottom 2rem
+	border-bottom 5px solid #e2e2e2
 	& figure
 		text-align center
+		padding-top 80px
 		& img
-			height 100px
-			margin-top 20px
+			max-height 80px
 	h1
-		font-size 24px
+		font-family: 'Cinzel';
+		font-size 2em
 		margin-top 20px
+		padding 0 20px
 		text-align center
-	h6
+	h5
+		font-family: 'Gloria Hallelujah', cursive;
 		font-size 0.8em
 		text-align center
-		
-main
-	overflow hidden
-	& h2
-		font-size 1em
-	& .services
-		min-height 500px
-		position relative
-		& .box
-			background rgba(255, 255, 255, .6)
-			min-height 280px
-			width 90%
+
+.center-i-menu
+	margin-top 2em
+	margin-bottom 2em
+	h2, h3
+		text-align center
+		color light-blue
+	h3
+		font-size 2em
+		margin 50px 0 20px 0
+	hr
+		border 1px solid light-blue
+		margin-top 20px
+		width 50%
+	p
+		margin-bottom 30px
+		padding-left 10%
+		padding-right 10%
+	& .container
+		& h2
+			font-size 1.2em
+		i
+			font-size 2.5em
+			padding-top 1em
+			margin-bottom 0.5em
+		& h2:hover
+			color white
+			background dark-blue
+			padding-bottom 1.5em
 			border-radius 20px
-			bottom 0
-			margin-bottom 20px
-			position absolute
-			& button
-				text-align left
-				width auto
-				padding 0.3em
-				position relative
-				left 15px
-				margin-bottom 15px
-				background c-blue
-				border 0
-				color white
-				border-radius 10px
-				& i
-					color white
-			& button:hover
-				transition background 2s
-				transition width 2s
-				-webkit-transition background 2s
-				-webkit-transition width 2s
-				-moz-transition background 2s
-				-moz-trasition width 2s
-				background d-blue
-				width 80%
-			& hr
-				border 1px solid c-blue
-			& h2
-				padding-top 2em
-			& i
-				color black
-				padding-right 10px
-			& p
-				padding-left 15px
-				padding-right 15px
-		& .service-1, .service-2, .service-3, .service-4, .service-5, .service-6 
-			border-radius 20px
-			border 5px solid white
-			overflow hidden
-			min-height 350px
-			background-size cover
-			background-repeat no-repeat
-	& .service-1
-		background url("../img/clinic-doctors-glass-127873b.jpg")
-	& .service-2
-		background url("../img/achievement-adult-care-1323864.jpg")
-	& .service-3
-		background url("../img/pexels-photo-721166.jpeg")
-	& .service-4
-		background url("../img/microscope-slide-research-close-up-60022.jpeg")
-	& .service-5
-		background url("../img/pexels-photo-1516648.jpeg")
-	& .service-6
-		background url("../img/pexels-photo-1321728.jpeg")
+
+.info-sg
+	background-image url('../img/pexels-photo-721166.png')
+	background-position right
+	background-repeat no-repeat
+	background-size cover
+	min-height auto
+	position relative
+	a
+		color white
+	a:hover
+		color light-blue
+	h4
+		text-align right
+		padding 10px 5% 5px 15px
+	.time
+		padding 2em
+	.fb-share-button, .fb-root > a
+		position absolute
+		right 5%
+		bottom 7%
+	#space-fb
+		margin-bottom 2em
 			
-		
+.light-blue
+	color light-blue
+	
+.consulta-prioritaria
+.consulta-programada
+.imagen-diagnostica
+.laboratorio-clinico
+.electrocardiografia
+.terapia-respiratoria
+	display none
+	color rgba(0, 0, 0, .75)
 
 @import "media"
