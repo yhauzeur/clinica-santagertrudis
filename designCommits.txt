@@ -1,0 +1,29 @@
+commit 6e1f17d8832c9f556388eb63bf1af162c21abb6d
+Author: Red Chain Company <security@redchain.co>
+Date:   Fri Jun 14 22:33:38 2019 -0500
+
+    fixing services
+
+commit ba5cc5ec95483e9a5d75f7afb34711e4e0b0d53e
+Author: Red Chain Company <security@redchain.co>
+Date:   Fri Apr 12 08:59:50 2019 -0500
+
+    servicios, jquery, img
+
+commit fae1ec6ad6e0f083da760bc0f3e858144f8fd927
+Author: Red Chain Company <security@redchain.co>
+Date:   Thu Apr 4 12:08:02 2019 -0500
+
+    header medio
+
+commit 03ed6395292b6188f1ef07aada1aca7851155dc6
+Author: Red Chain Company <security@redchain.co>
+Date:   Wed Apr 3 20:26:07 2019 -0500
+
+    diseño header p1
+
+commit 29f3545e8ae7a3356fe7c616e3d59a94ef0df1a4
+Author: Debian Live user <user@localhost.localdomain>
+Date:   Mon Apr 1 20:10:16 2019 +0000
+
+    0init
