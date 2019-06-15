@@ -1,5 +1,9 @@
 light-blue = #007dbe
 dark-blue = #003f60
+redchain =  #d40000
+
+body
+	background black
 
 aside
 	margin-top 2em
@@ -24,8 +28,34 @@ aside
 	& .fa-bars:hover
 		font-size 1.5em
 
-.center-i-menu
-	text-align center
+.picture-grid
+	// background black
+	display flex
+	flex-wrap wrap
+	justify-content center
+	min-height auto
+	padding 1em 0
+	position relative
+	& img
+		height 200px
+		width 320px
+		margin 0.5em
+		transition 1s
+	& img:hover
+		width 350px
+		height auto
+		overflow hidden
+	& .marco
+		bottom 20px
+		background rgba(0, 0, 0, .75)
+		color white
+	
+footer
+	overflow hidden
+	div
+		background dark-blue
+		color white
+		padding 1em 3em
 
 header
 	background url("../img/clinic-doctors-glass-127873.jpg")
@@ -51,6 +81,7 @@ header
 		text-align center
 
 .center-i-menu
+	text-align center
 	margin-top 2em
 	margin-bottom 2em
 	h2, h3
@@ -58,7 +89,7 @@ header
 		color light-blue
 	h3
 		font-size 2em
-		margin 50px 0 20px 0
+		margin 50px 0 10px 0
 	hr
 		border 1px solid light-blue
 		margin-top 20px
@@ -67,9 +98,22 @@ header
 		margin-bottom 30px
 		padding-left 10%
 		padding-right 10%
+	.consulta-prioritaria
+	.consulta-programada
+	.imagen-diagnostica
+	.laboratorio-clinico
+	.electrocardiografia
+	.terapia-respiratoria
+		display none
+		color rgba(0, 0, 0, .75)
 	& .container
 		& h2
-			font-size 1.2em
+			font-size 1.1em
+			// background #eee
+			// box-shadow 5px  10px 20px 2px rgba(0, 0, 0, .3)
+			// min-height 220px
+			// border-radius 30px
+			padding 5px
 		i
 			font-size 2.5em
 			padding-top 1em
@@ -79,9 +123,11 @@ header
 			background dark-blue
 			padding-bottom 1.5em
 			border-radius 20px
+			// height 240px
 
 .info-sg
 	background-image url('../img/pexels-photo-721166.png')
+	background-attachment fixed
 	background-position right
 	background-repeat no-repeat
 	background-size cover
@@ -106,13 +152,19 @@ header
 .light-blue
 	color light-blue
 	
-.consulta-prioritaria
-.consulta-programada
-.imagen-diagnostica
-.laboratorio-clinico
-.electrocardiografia
-.terapia-respiratoria
-	display none
-	color rgba(0, 0, 0, .75)
+.redchain
+	height 3em
+	padding-bottom 50px
+	background #1a1a1a
+	& h2
+	& a
+		font-size 16px
+		text-align center
+		padding-top 20px
+		color white
+.redchain:hover
+	background #eee
+	& a
+		color redchain
 
 @import "media"

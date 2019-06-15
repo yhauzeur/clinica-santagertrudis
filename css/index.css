@@ -1,3 +1,6 @@
+body {
+  background: #000;
+}
 aside {
   margin-top: 2em;
 }
@@ -23,8 +26,37 @@ aside {
 .data .fa-bars:hover {
   font-size: 1.5em;
 }
-.center-i-menu {
-  text-align: center;
+.picture-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: auto;
+  padding: 1em 0;
+  position: relative;
+}
+.picture-grid img {
+  height: 200px;
+  width: 320px;
+  margin: 0.5em;
+  transition: 1s;
+}
+.picture-grid img:hover {
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+}
+.picture-grid .marco {
+  bottom: 20px;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+}
+footer {
+  overflow: hidden;
+}
+footer div {
+  background: #003f60;
+  color: #fff;
+  padding: 1em 3em;
 }
 header {
   background: url("../img/clinic-doctors-glass-127873.jpg");
@@ -54,6 +86,7 @@ header h5 {
   text-align: center;
 }
 .center-i-menu {
+  text-align: center;
   margin-top: 2em;
   margin-bottom: 2em;
 }
@@ -64,7 +97,7 @@ header h5 {
 }
 .center-i-menu h3 {
   font-size: 2em;
-  margin: 50px 0 20px 0;
+  margin: 50px 0 10px 0;
 }
 .center-i-menu hr {
   border: 1px solid #007dbe;
@@ -76,8 +109,18 @@ header h5 {
   padding-left: 10%;
   padding-right: 10%;
 }
+.center-i-menu .consulta-prioritaria,
+.center-i-menu .consulta-programada,
+.center-i-menu .imagen-diagnostica,
+.center-i-menu .laboratorio-clinico,
+.center-i-menu .electrocardiografia,
+.center-i-menu .terapia-respiratoria {
+  display: none;
+  color: rgba(0,0,0,0.75);
+}
 .center-i-menu .container h2 {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  padding: 5px;
 }
 .center-i-menu .container i {
   font-size: 2.5em;
@@ -92,6 +135,7 @@ header h5 {
 }
 .info-sg {
   background-image: url("../img/pexels-photo-721166.png");
+  background-attachment: fixed;
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,14 +167,23 @@ header h5 {
 .light-blue {
   color: #007dbe;
 }
-.consulta-prioritaria,
-.consulta-programada,
-.imagen-diagnostica,
-.laboratorio-clinico,
-.electrocardiografia,
-.terapia-respiratoria {
-  display: none;
-  color: rgba(0,0,0,0.75);
+.redchain {
+  height: 3em;
+  padding-bottom: 50px;
+  background: #1a1a1a;
+}
+.redchain h2,
+.redchain a {
+  font-size: 16px;
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+}
+.redchain:hover {
+  background: #eee;
+}
+.redchain:hover a {
+  color: #d40000;
 }
 @media screen and (max-width: 576px) {
   .info-sg h4 {
