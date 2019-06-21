@@ -185,6 +185,18 @@ header h5 {
 .redchain:hover a {
   color: #d40000;
 }
+#labList {
+  display: none;
+  margin: auto;
+}
+#labList ul {
+  tex1-align: centers;
+}
+#labList li {
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
 @media all and (max-width: 600px) {
   .picture-grid {
     display: none;
