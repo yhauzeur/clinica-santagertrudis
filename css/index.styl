@@ -7,14 +7,12 @@ body
 
 aside
 	margin-top 2em
-	
+
 .data
 	color white
 	background light-blue
 	padding 1em
 	text-align right
-	// z-index 1
-	// width 100%
 	& a
 		color white
 		padding 0 0.5em
@@ -49,7 +47,7 @@ aside
 		bottom 20px
 		background rgba(0, 0, 0, .75)
 		color white
-	
+
 footer
 	overflow hidden
 	div
@@ -112,10 +110,6 @@ header
 	& .container
 		& h2
 			font-size 1.1em
-			// background #eee
-			// box-shadow 5px  10px 20px 2px rgba(0, 0, 0, .3)
-			// min-height 220px
-			// border-radius 30px
 			padding 5px
 		i
 			font-size 2.5em
@@ -126,7 +120,13 @@ header
 			background dark-blue
 			padding-bottom 1.5em
 			border-radius 20px
-			// height 240px
+	.row
+		div
+			h2
+				max-width 200px
+				margin: auto
+		p
+			margin-top: 20px
 
 .info-sg
 	background-image url('../img/pexels-photo-721166.png')
@@ -151,10 +151,10 @@ header
 		bottom 7%
 	#space-fb
 		margin-bottom 2em
-			
+
 .light-blue
 	color light-blue
-	
+
 .redchain
 	height 3em
 	padding-bottom 50px
@@ -173,5 +173,5 @@ header
 @media all and (max-width: 600px)
 	.picture-grid
 		display none
-		
+
 @import "media"

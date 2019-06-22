@@ -135,6 +135,13 @@ header h5 {
   padding-bottom: 1.5em;
   border-radius: 20px;
 }
+.center-i-menu .row div h2 {
+  max-width: 200px;
+  margin: auto;
+}
+.center-i-menu .row p {
+  margin-top: 20px;
+}
 .info-sg {
   background-image: url("../img/pexels-photo-721166.png");
   background-attachment: fixed;
