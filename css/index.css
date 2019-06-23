@@ -58,6 +58,15 @@ footer div {
   color: #fff;
   padding: 1em 3em;
 }
+footer .img-footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+}
+footer .img-footer img {
+  width: 100%;
+  height: auto;
+}
 header {
   background: url("../img/clinic-doctors-glass-127873.jpg");
   background-size: cover;
