@@ -65,6 +65,7 @@ footer .img-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 10px;
+  align-items: center;
 }
 footer .img-footer img {
   width: 100%;
