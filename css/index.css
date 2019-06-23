@@ -58,10 +58,13 @@ footer div {
   color: #fff;
   padding: 1em 3em;
 }
+footer .dataContact h5 {
+  margin: 20px 0;
+}
 footer .img-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 15px;
+  grid-column-gap: 10px;
 }
 footer .img-footer img {
   width: 100%;
