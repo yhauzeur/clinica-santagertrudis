@@ -2,11 +2,11 @@ light-blue = #007dbe
 dark-blue = #003f60
 redchain =  #d40000
 
-body
-	background black
-
 aside
 	margin-top 2em
+
+body
+	background black
 
 .data
 	color white
@@ -26,27 +26,58 @@ aside
 	& .fa-bars:hover
 		font-size 1.5em
 
-.picture-grid
-	// background black
-	display flex
-	flex-wrap wrap
-	justify-content center
-	min-height auto
-	padding 1em 0
-	position relative
-	& img
-		height 200px
-		width 320px
-		margin 0.5em
-		transition 1s
-	& img:hover
-		width 350px
-		height auto
-		overflow hidden
-	& .marco
-		bottom 20px
-		background rgba(0, 0, 0, .75)
-		color white
+.center-i-menu
+	text-align center
+	margin-top 2em
+	margin-bottom 2em
+	h2, h3
+		text-align center
+		color light-blue
+	h3
+		font-size 2em
+		margin 50px 0 10px 0
+	hr
+		border 1px solid light-blue
+		margin-top 20px
+		width 50%
+	p
+		margin-bottom 30px
+		padding-left 10%
+		padding-right 10%
+	.consulta-prioritaria
+	.consulta-programada
+	.imagen-diagnostica
+	.laboratorio-clinico
+	.electrocardiografia
+	.terapia-respiratoria
+	#pediatria
+	#medicina-familiar
+	#obstetricia
+	#laboratorio-clinico-2
+	#fisioterapia
+	#terapia-respiratoria-2
+		display none
+		color rgba(0, 0, 0, .75)
+	& .container
+		& h2
+			font-size 1.1em
+			padding 5px
+		i
+			font-size 2.5em
+			padding-top 1em
+			margin-bottom 0.5em
+		& h2:hover
+			color white
+			background dark-blue
+			padding-bottom 1.5em
+			border-radius 20px
+	.row
+		div
+			h2
+				max-width 200px
+				margin: auto
+		p
+			margin-top: 20px
 
 footer
 	overflow hidden
@@ -65,7 +96,6 @@ footer
 		img
 			width 100%
 			height auto
-	
 
 header
 	background url("../img/clinic-doctors-glass-127873.jpg")
@@ -93,53 +123,6 @@ header
 		// font-size 0.8em
 		text-align center
 
-.center-i-menu
-	text-align center
-	margin-top 2em
-	margin-bottom 2em
-	h2, h3
-		text-align center
-		color light-blue
-	h3
-		font-size 2em
-		margin 50px 0 10px 0
-	hr
-		border 1px solid light-blue
-		margin-top 20px
-		width 50%
-	p
-		margin-bottom 30px
-		padding-left 10%
-		padding-right 10%
-	.consulta-prioritaria
-	.consulta-programada
-	.imagen-diagnostica
-	.laboratorio-clinico
-	.electrocardiografia
-	.terapia-respiratoria
-		display none
-		color rgba(0, 0, 0, .75)
-	& .container
-		& h2
-			font-size 1.1em
-			padding 5px
-		i
-			font-size 2.5em
-			padding-top 1em
-			margin-bottom 0.5em
-		& h2:hover
-			color white
-			background dark-blue
-			padding-bottom 1.5em
-			border-radius 20px
-	.row
-		div
-			h2
-				max-width 200px
-				margin: auto
-		p
-			margin-top: 20px
-
 .info-sg
 	background-image url('../img/pexels-photo-721166.png')
 	background-attachment fixed
@@ -164,8 +147,40 @@ header
 	#space-fb
 		margin-bottom 2em
 
+#labList
+	display none
+	margin auto
+	ul
+		tex1-align centers
+	li
+		text-align center
+		position relative
+		text-decoration none
+
 .light-blue
 	color light-blue
+
+.picture-grid
+	// background black
+	display flex
+	flex-wrap wrap
+	justify-content center
+	min-height auto
+	padding 1em 0
+	position relative
+	& img
+		height 200px
+		width 320px
+		margin 0.5em
+		transition 1s
+	& img:hover
+		width 350px
+		height auto
+		overflow hidden
+	& .marco
+		bottom 20px
+		background rgba(0, 0, 0, .75)
+		color white
 
 .redchain
 	height 3em
@@ -181,16 +196,6 @@ header
 	background #eee
 	& a
 		color redchain
-
-#labList
-	display none
-	margin auto
-	ul
-		tex1-align centers
-	li
-		text-align center
-		position relative
-		text-decoration none
 
 @media all and (max-width: 600px)
 	.picture-grid

@@ -1,8 +1,8 @@
-body {
-  background: #000;
-}
 aside {
   margin-top: 2em;
+}
+body {
+  background: #000;
 }
 .data {
   color: #fff;
@@ -26,29 +26,66 @@ aside {
 .data .fa-bars:hover {
   font-size: 1.5em;
 }
-.picture-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-height: auto;
-  padding: 1em 0;
-  position: relative;
+.center-i-menu {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
-.picture-grid img {
-  height: 200px;
-  width: 320px;
-  margin: 0.5em;
-  transition: 1s;
+.center-i-menu h2,
+.center-i-menu h3 {
+  text-align: center;
+  color: #007dbe;
 }
-.picture-grid img:hover {
-  width: 350px;
-  height: auto;
-  overflow: hidden;
+.center-i-menu h3 {
+  font-size: 2em;
+  margin: 50px 0 10px 0;
 }
-.picture-grid .marco {
-  bottom: 20px;
-  background: rgba(0,0,0,0.75);
+.center-i-menu hr {
+  border: 1px solid #007dbe;
+  margin-top: 20px;
+  width: 50%;
+}
+.center-i-menu p {
+  margin-bottom: 30px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.center-i-menu .consulta-prioritaria,
+.center-i-menu .consulta-programada,
+.center-i-menu .imagen-diagnostica,
+.center-i-menu .laboratorio-clinico,
+.center-i-menu .electrocardiografia,
+.center-i-menu .terapia-respiratoria,
+.center-i-menu #pediatria,
+.center-i-menu #medicina-familiar,
+.center-i-menu #obstetricia,
+.center-i-menu #laboratorio-clinico-2,
+.center-i-menu #fisioterapia,
+.center-i-menu #terapia-respiratoria-2 {
+  display: none;
+  color: rgba(0,0,0,0.75);
+}
+.center-i-menu .container h2 {
+  font-size: 1.1em;
+  padding: 5px;
+}
+.center-i-menu .container i {
+  font-size: 2.5em;
+  padding-top: 1em;
+  margin-bottom: 0.5em;
+}
+.center-i-menu .container h2:hover {
   color: #fff;
+  background: #003f60;
+  padding-bottom: 1.5em;
+  border-radius: 20px;
+}
+.center-i-menu .row div h2 {
+  max-width: 200px;
+  margin: auto;
+}
+.center-i-menu .row p {
+  margin-top: 20px;
 }
 footer {
   overflow: hidden;
@@ -100,61 +137,6 @@ header h5 {
   font-family: 'Gloria Hallelujah', cursive;
   text-align: center;
 }
-.center-i-menu {
-  text-align: center;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-.center-i-menu h2,
-.center-i-menu h3 {
-  text-align: center;
-  color: #007dbe;
-}
-.center-i-menu h3 {
-  font-size: 2em;
-  margin: 50px 0 10px 0;
-}
-.center-i-menu hr {
-  border: 1px solid #007dbe;
-  margin-top: 20px;
-  width: 50%;
-}
-.center-i-menu p {
-  margin-bottom: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-.center-i-menu .consulta-prioritaria,
-.center-i-menu .consulta-programada,
-.center-i-menu .imagen-diagnostica,
-.center-i-menu .laboratorio-clinico,
-.center-i-menu .electrocardiografia,
-.center-i-menu .terapia-respiratoria {
-  display: none;
-  color: rgba(0,0,0,0.75);
-}
-.center-i-menu .container h2 {
-  font-size: 1.1em;
-  padding: 5px;
-}
-.center-i-menu .container i {
-  font-size: 2.5em;
-  padding-top: 1em;
-  margin-bottom: 0.5em;
-}
-.center-i-menu .container h2:hover {
-  color: #fff;
-  background: #003f60;
-  padding-bottom: 1.5em;
-  border-radius: 20px;
-}
-.center-i-menu .row div h2 {
-  max-width: 200px;
-  margin: auto;
-}
-.center-i-menu .row p {
-  margin-top: 20px;
-}
 .info-sg {
   background-image: url("../img/pexels-photo-721166.png");
   background-attachment: fixed;
@@ -186,8 +168,44 @@ header h5 {
 .info-sg #space-fb {
   margin-bottom: 2em;
 }
+#labList {
+  display: none;
+  margin: auto;
+}
+#labList ul {
+  tex1-align: centers;
+}
+#labList li {
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
 .light-blue {
   color: #007dbe;
+}
+.picture-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: auto;
+  padding: 1em 0;
+  position: relative;
+}
+.picture-grid img {
+  height: 200px;
+  width: 320px;
+  margin: 0.5em;
+  transition: 1s;
+}
+.picture-grid img:hover {
+  width: 350px;
+  height: auto;
+  overflow: hidden;
+}
+.picture-grid .marco {
+  bottom: 20px;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
 }
 .redchain {
   height: 3em;
@@ -206,18 +224,6 @@ header h5 {
 }
 .redchain:hover a {
   color: #d40000;
-}
-#labList {
-  display: none;
-  margin: auto;
-}
-#labList ul {
-  tex1-align: centers;
-}
-#labList li {
-  text-align: center;
-  position: relative;
-  text-decoration: none;
 }
 @media all and (max-width: 600px) {
   .picture-grid {
